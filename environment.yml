@@ -1,0 +1,10 @@
+name: pydata-nyc-2015
+channels:
+  - koverholt
+dependencies:
+  - python=2.7
+  - jupyter
+  - ibis-framework
+  - blaze
+  - pip:
+    - pyserve
