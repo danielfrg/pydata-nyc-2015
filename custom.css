@@ -1,0 +1,4 @@
+.text_cell.rendered .rendered_html {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
