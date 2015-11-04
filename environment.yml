@@ -6,5 +6,7 @@ dependencies:
   - jupyter
   - ibis-framework
   - blaze
+  - bokeh
   - pip:
     - pyserve
+    - impyla
