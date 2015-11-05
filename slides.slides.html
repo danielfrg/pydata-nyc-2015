@@ -282,7 +282,7 @@ Anaconda Cluster</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Querying 1.7 billion reddit comments <strong>with</strong> python</p>
+<p>Querying 1.8 billion reddit comments <strong>using</strong> python</p>
 
 </div>
 </div>
@@ -306,7 +306,7 @@ Anaconda Cluster</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We are going to write python, but the engine is C/C++ (Impala)</p>
+<p>We are going to write python, but the engine is a distributed C/C++ (Impala)</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Anaconda Cluster</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Querying data with some new python libraries plus some plots</li>
+<li>Querying data with some new python libraries</li>
 </ul>
 
 </div>
@@ -396,24 +396,26 @@ Anaconda Cluster</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Reddit.com - The frontpage of the Internet</p>
+<p><img src="https://www.redditstatic.com/about/assets/reddit-logo.png" alt="reddit"></p>
+<p>The frontpage of the Internet</p>
 
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="14">
+    </div></section>
+    </section><section>
+    <section>
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/">I have every publicly available Reddit comment for research. ~ 1.7 billion comments @ 250 GB compressed. Any interest in this?</a></p>
+<h1 id="Data">Data<a class="anchor-link" href="#Data">&#182;</a></h1><p><a href="https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/">I have every publicly available Reddit comment for research. ~ 1.7 billion comments @ 250 GB compressed. Any interest in this?</a></p>
 
 </div>
 </div>
-</div>
-    </div><div class="fragment" data-fragment-index="15">
+</div><div class="fragment" data-fragment-index="15">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -4387,7 +4389,7 @@ QAEKUCDeAgyi8RZm+RSgAAUoYFoBBlHTXlo2jAIUoAAF4i3AIBpvYZZPAQpQgAKmFfh/UhxTcjgL
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Clusters">Clusters<a class="anchor-link" href="#Clusters">&#182;</a></h1><p>Data science friendly clusters</p>
+<h1 id="Clusters">Clusters<a class="anchor-link" href="#Clusters">&#182;</a></h1><p>Data science "friendly" clusters</p>
 
 </div>
 </div>
@@ -4411,7 +4413,7 @@ QAEKUCDeAgyi8RZm+RSgAAUoYFoBBlHTXlo2jAIUoAAF4i3AIBpvYZZPAQpQgAKmFfh/UhxTcjgL
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Data analysis package and environment managment</li>
+<li>Data analysis package and environment management</li>
 </ul>
 
 </div>
@@ -4480,7 +4482,7 @@ QAEKUCDeAgyi8RZm+RSgAAUoYFoBBlHTXlo2jAIUoAAF4i3AIBpvYZZPAQpQgAKmFfh/UhxTcjgL
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Still requires to know what you are doing: AWS, keypairs, SSH. No magic.</p>
+<p>Still requires to know what you are doing: AWS, Keypairs, Security groups, SSH. No magic.</p>
 
 </div>
 </div>
@@ -4522,8 +4524,8 @@ QAEKUCDeAgyi8RZm+RSgAAUoYFoBBlHTXlo2jAIUoAAF4i3AIBpvYZZPAQpQgAKmFfh/UhxTcjgL
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="36">
-        
+    </div><div class="fragment" data-fragment-index="37">
+    
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -4537,7 +4539,7 @@ $ dsb</code></pre>
 </div>
 </div>
 </div>
-        </div></section>
+    </div></section>
     </section><section>
     <section>
     
@@ -4877,7 +4879,7 @@ Commands:
 <pre><code>name: impala-profile
 provider: aws
 user: ubuntu
-num_nodes: 8
+num_nodes: 10
 node_id: ami-08faa660  # Ubuntu 12.04
 node_type: m3.2xlarge
 root_size: 1000
@@ -5048,6 +5050,8 @@ Node "ip-172-31-0-188.ec2.internal":
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Data:-Parquet">Data: Parquet<a class="anchor-link" href="#Data:-Parquet">&#182;</a></h1><p><img src="http://docs.aws.amazon.com/redshift/latest/dg/images/03a-Rows-vs-Columns.png" alt="CS"></p>
 <p><img src="http://docs.aws.amazon.com/redshift/latest/dg/images/03b-Rows-vs-Columns.png" alt="CS"></p>
+<hr>
+
 <p>[1] <a href="http://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html">http://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html</a></p>
 
 </div>
