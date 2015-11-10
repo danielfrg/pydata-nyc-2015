@@ -223,7 +223,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Querying-1.6-1.8-billion-reddit-comments">Querying <del>1.6</del> 1.8 billion reddit comments<a class="anchor-link" href="#Querying-1.6-1.8-billion-reddit-comments">&#182;</a></h1><h1 id="with-python">with python<a class="anchor-link" href="#with-python">&#182;</a></h1>
+<h1 id="Querying-1.6-1.8-billion-reddit-comments">Querying <del>1.6</del> 1.8 billion reddit comments<a class="anchor-link" href="#Querying-1.6-1.8-billion-reddit-comments">&#182;</a></h1><h1 id="with-python">with python<a class="anchor-link" href="#with-python">&#182;</a></h1><center>Daniel Rodriguez / PyData NYC / Nov 11, 2015</center><center><a href="https://github.com/danielfrg/pydata-nyc-2015">github.com/danielfrg/pydata-nyc-2015</a></center>
 </div>
 </div>
 </div></section>
@@ -1245,6 +1245,20 @@ Fetched 1 row(s) in 4.88s</code></pre>
 </div>
 </div><div class="fragment" data-fragment-index="62">
     
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>An interface to query data on different storage systems</p>
+<p>Code: <a href="https://github.com/blaze/blaze">https://github.com/blaze/blaze</a></p>
+<p>Blaze ecosystem: <a href="http://blaze.pydata.org">http://blaze.pydata.org</a></p>
+
+</div>
+</div>
+</div>
+    </div><div class="fragment" data-fragment-index="63">
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
@@ -1259,7 +1273,7 @@ Fetched 1 row(s) in 4.88s</code></pre>
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="63">
+    </div><div class="fragment" data-fragment-index="64">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1274,7 +1288,7 @@ Fetched 1 row(s) in 4.88s</code></pre>
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="64">
+    </div><div class="fragment" data-fragment-index="65">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1342,7 +1356,7 @@ Fetched 1 row(s) in 4.88s</code></pre>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="66">
+</div><div class="fragment" data-fragment-index="67">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1372,7 +1386,7 @@ Fetched 1 row(s) in 4.88s</code></pre>
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="67">
+    </div><div class="fragment" data-fragment-index="68">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1415,7 +1429,7 @@ FROM reddit_parquet
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="69">
+</div><div class="fragment" data-fragment-index="70">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1430,7 +1444,7 @@ FROM reddit_parquet
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="70">
+    </div><div class="fragment" data-fragment-index="71">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1460,7 +1474,7 @@ FROM reddit_parquet
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="71">
+    </div><div class="fragment" data-fragment-index="72">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1512,7 +1526,7 @@ Wall time: 3.69 s
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="73">
+</div><div class="fragment" data-fragment-index="74">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1527,7 +1541,7 @@ Wall time: 3.69 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="74">
+    </div><div class="fragment" data-fragment-index="75">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1559,7 +1573,7 @@ WHERE reddit_parquet.subreddit = %(subreddit_1)s) AS alias_1
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="75">
+    </div><div class="fragment" data-fragment-index="76">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1611,7 +1625,7 @@ Wall time: 5 s
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="77">
+</div><div class="fragment" data-fragment-index="78">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1626,7 +1640,7 @@ Wall time: 5 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="78">
+    </div><div class="fragment" data-fragment-index="79">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1658,7 +1672,7 @@ WHERE EXTRACT(hour FROM reddit_parquet.created_utc_t) &lt; %(param_1)s) AS alias
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="79">
+    </div><div class="fragment" data-fragment-index="80">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1710,7 +1724,7 @@ Wall time: 5.54 s
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="81">
+</div><div class="fragment" data-fragment-index="82">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1725,7 +1739,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="82">
+    </div><div class="fragment" data-fragment-index="83">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1740,7 +1754,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="83">
+    </div><div class="fragment" data-fragment-index="84">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1755,7 +1769,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="84">
+    </div><div class="fragment" data-fragment-index="85">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1783,7 +1797,7 @@ Wall time: 5.54 s
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="86">
+</div><div class="fragment" data-fragment-index="87">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1795,7 +1809,7 @@ Wall time: 5.54 s
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="87">
+    </div><div class="fragment" data-fragment-index="88">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1810,7 +1824,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="88">
+    </div><div class="fragment" data-fragment-index="89">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1877,7 +1891,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="89">
+    </div><div class="fragment" data-fragment-index="90">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1892,7 +1906,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="90">
+    </div><div class="fragment" data-fragment-index="91">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1921,7 +1935,7 @@ Wall time: 5.54 s
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="92">
+</div><div class="fragment" data-fragment-index="93">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1936,7 +1950,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="93">
+    </div><div class="fragment" data-fragment-index="94">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2179,7 +2193,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="94">
+    </div><div class="fragment" data-fragment-index="95">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2246,11 +2260,37 @@ Wall time: 5.54 s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ibis">Ibis<a class="anchor-link" href="#Ibis">&#182;</a></h1>
+</div>
+</div>
+</div><div class="fragment" data-fragment-index="97">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ibis is a new Python data analysis framework with the goal of enabling data scientists and data engineers to be as productive working with big data as they are working with small and medium data today. In doing so, we will enable Python to become a true first-class language for Apache Hadoop, without compromises in functionality, usability, or performance</p>
+<p><a href="http://www.ibis-project.org">http://www.ibis-project.org</a></p>
+<p>From Wes McKinney</p>
+
+</div>
+</div>
+</div>
+    </div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Ibis">Ibis<a class="anchor-link" href="#Ibis">&#182;</a></h1><p>Cummulative sum of the number of posts with more than 1k up votes</p>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="96">
+</div><div class="fragment" data-fragment-index="99">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2268,7 +2308,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="97">
+    </div><div class="fragment" data-fragment-index="100">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2284,7 +2324,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="98">
+    </div><div class="fragment" data-fragment-index="101">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2300,7 +2340,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="99">
+    </div><div class="fragment" data-fragment-index="102">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2327,7 +2367,7 @@ Wall time: 5.54 s
 <h1 id="Ibis">Ibis<a class="anchor-link" href="#Ibis">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="101">
+</div><div class="fragment" data-fragment-index="104">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2395,7 +2435,7 @@ Wall time: 5.54 s
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="103">
+</div><div class="fragment" data-fragment-index="106">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2410,7 +2450,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="104">
+    </div><div class="fragment" data-fragment-index="107">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2426,7 +2466,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="105">
+    </div><div class="fragment" data-fragment-index="108">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2441,7 +2481,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="106">
+    </div><div class="fragment" data-fragment-index="109">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2457,7 +2497,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="107">
+    </div><div class="fragment" data-fragment-index="110">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2485,7 +2525,7 @@ Wall time: 5.54 s
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="109">
+</div><div class="fragment" data-fragment-index="112">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2497,7 +2537,7 @@ Wall time: 5.54 s
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="110">
+    </div><div class="fragment" data-fragment-index="113">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2515,7 +2555,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="111">
+    </div><div class="fragment" data-fragment-index="114">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2760,7 +2800,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="112">
+    </div><div class="fragment" data-fragment-index="115">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2830,7 +2870,7 @@ Wall time: 5.54 s
 <h1 id="Spark?">Spark?<a class="anchor-link" href="#Spark?">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="114">
+</div><div class="fragment" data-fragment-index="117">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2842,7 +2882,7 @@ Wall time: 5.54 s
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="115">
+    </div><div class="fragment" data-fragment-index="118">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2858,7 +2898,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="116">
+    </div><div class="fragment" data-fragment-index="119">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2883,7 +2923,7 @@ Wall time: 5.54 s
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="117">
+    </div><div class="fragment" data-fragment-index="120">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2894,7 +2934,7 @@ Wall time: 5.54 s
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="118">
+    </div><div class="fragment" data-fragment-index="121">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2915,10 +2955,10 @@ Wall time: 5.54 s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1>
+<h1 id="Wrap-up">Wrap up<a class="anchor-link" href="#Wrap-up">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="120">
+</div><div class="fragment" data-fragment-index="123">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2932,7 +2972,7 @@ Wall time: 5.54 s
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="121">
+    </div><div class="fragment" data-fragment-index="124">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2946,7 +2986,7 @@ Wall time: 5.54 s
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="122">
+    </div><div class="fragment" data-fragment-index="125">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2960,7 +3000,7 @@ Wall time: 5.54 s
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="123">
+    </div><div class="fragment" data-fragment-index="126">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2974,7 +3014,7 @@ Wall time: 5.54 s
 </div>
 </div>
 </div>
-    </div><div class="fragment" data-fragment-index="124">
+    </div><div class="fragment" data-fragment-index="127">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -3012,7 +3052,7 @@ Wall time: 5.54 s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Questions?">Questions?<a class="anchor-link" href="#Questions?">&#182;</a></h1>
+<h1 id="Thanks">Thanks<a class="anchor-link" href="#Thanks">&#182;</a></h1>
 </div>
 </div>
 </div></section>
