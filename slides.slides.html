@@ -384,7 +384,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data">Data<a class="anchor-link" href="#Data">&#182;</a></h1><p><img src="https://www.redditstatic.com/about/assets/reddit-logo.png" alt="reddit"></p>
+<h1 id="Data">Data<a class="anchor-link" href="#Data">&#182;</a></h1><p><img src="http://www.localhost:5000/images/reddit-logo.png" alt="reddit"></p>
 <p>The frontpage of the Internet</p>
 
 </div>
@@ -815,7 +815,7 @@ $ acluster submit script.py
 
 $ acluster put script.py /tmp/script.py
 
-$ acluster put script.py /tmp/script.py</code></pre>
+$ acluster get /tmp/script.py script.py</code></pre>
 
 </div>
 </div>
@@ -934,7 +934,7 @@ $ dsb install impala</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="http://unbridled.info/dev/saltstack/wp-content/uploads/2014/12/saltStack_horizontal_dark_400x126.png" alt="Saltstack"></p>
+<p><img src="http://www.localhost:5000/images/salt.png" alt="Saltstack"></p>
 <p>Salt: <a href="https://github.com/saltstack/salt">https://github.com/saltstack/salt</a></p>
 <ul>
 <li>100%  free and open source</li>
@@ -1018,8 +1018,8 @@ s3n://blaze-data/reddit/json/*/*.json /user/ubuntu</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data:-Parquet">Data: Parquet<a class="anchor-link" href="#Data:-Parquet">&#182;</a></h1><p><img src="http://docs.aws.amazon.com/redshift/latest/dg/images/03a-Rows-vs-Columns.png" alt="CS"></p>
-<p><img src="http://docs.aws.amazon.com/redshift/latest/dg/images/03b-Rows-vs-Columns.png" alt="CS"></p>
+<h1 id="Data:-Parquet">Data: Parquet<a class="anchor-link" href="#Data:-Parquet">&#182;</a></h1><p><img src="http://www.localhost:5000/images/cols1.png" alt="CS1"></p>
+<p><img src="http://www.localhost:5000/images/cols2.png" alt="CS2"></p>
 <p><br>
 <br></p>
 <hr>
@@ -1155,7 +1155,7 @@ hive > INSERT OVERWRITE TABLE reddit_parquet select *, <b>cast(cast(created_utc 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Querying">Querying<a class="anchor-link" href="#Querying">&#182;</a></h1><center><img src="http://impala.io/img/impala-logo.png"></center>
+<h1 id="Querying">Querying<a class="anchor-link" href="#Querying">&#182;</a></h1><center><img src="http://www.localhost:5000/images/impala.png"></center>
 </div>
 </div>
 </div></section>
@@ -1266,7 +1266,7 @@ Fetched 1 row(s) in 4.88s</code></pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>An interface to query data on different storage systems</p>
-<p>Code: <a href="https://github.com/blaze/blaze">https://github.com/blaze/blaze</a></p>
+<p>Code at <a href="https://github.com/blaze/blaze">https://github.com/blaze/blaze</a></p>
 <p>Blaze ecosystem: <a href="http://blaze.pydata.org">http://blaze.pydata.org</a></p>
 
 </div>
@@ -2286,8 +2286,8 @@ Wall time: 5.54 s
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ibis is a new Python data analysis framework with the goal of enabling data scientists and data engineers to be as productive working with big data as they are working with small and medium data today. In doing so, we will enable Python to become a true first-class language for Apache Hadoop, without compromises in functionality, usability, or performance</p>
-<p><a href="http://www.ibis-project.org">http://www.ibis-project.org</a></p>
-<p>From Wes McKinney</p>
+<p>Code at:</p>
+<p>More info: <a href="http://www.ibis-project.org">http://www.ibis-project.org</a></p>
 
 </div>
 </div>
@@ -2956,7 +2956,11 @@ Wall time: 5.54 s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="http://spark.apache.org/docs/latest/sql-programming-guide.html#parquet-files">http://spark.apache.org/docs/latest/sql-programming-guide.html#parquet-files</a></p>
+<p><br>
+<br></p>
+<hr>
+
+<p><small>Taken from: http://spark.apache.org/docs/latest/sql-programming-guide.html#parquet-files</small></p>
 
 </div>
 </div>
@@ -3036,7 +3040,8 @@ Wall time: 5.54 s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="More-queries">More queries<a class="anchor-link" href="#More-queries">&#182;</a></h3><ul>
+<p>Ideas:</p>
+<ul>
 <li><p><a href="https://www.reddit.com/r/dataisbeautiful/comments/3mtkmw/reddit_though_the_ages_most_popular_domains/?ref=search_posts">Reddit though the ages: Most popular domains shared on Reddit from 2007-2015 [OC]</a></p>
 </li>
 <li><p><a href="https://www.reddit.com/r/dataisbeautiful/comments/3nz3zz/average_number_of_upvotes_for_reddit_submissions/">Average number of upvotes for Reddit submissions containing a given keyword, for each of the Top 15 subreddits [OC]</a></p>
@@ -3045,7 +3050,7 @@ Wall time: 5.54 s
 </li>
 <li><p><a href="https://www.reddit.com/r/dataisbeautiful/comments/2ovpmb/reddit_was_hit_with_massive_accountsubreddit/">Reddit was hit with massive account+subreddit creation spam for three days during November 2014 [OC]</a></p>
 </li>
-<li><p><a href="https://www.reddit.com/r/dataisbeautiful/comments/3nkwwa/the_best_time_to_post_to_reddit_east_coast_early/">Reddit was hit with massive account+subreddit creation spam for three days during November 2014 [OC]</a></p>
+<li><p><a href="https://www.reddit.com/r/dataisbeautiful/comments/3nkwwa/the_best_time_to_post_to_reddit_east_coast_early/">The best time to post to reddit: East coast early risers have an advantage, but all depends on which sub [OC]</a></p>
 </li>
 <li><p><a href="http://ramiro.org/notebook/reddit-best-post-times/">The Best Times to Post to reddit Revisited</a></p>
 </li>
